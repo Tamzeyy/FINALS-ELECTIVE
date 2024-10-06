@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRMSU College of Engineering</title>
+    <link rel="stylesheet" href="CSS_FILE.css">
+    <style>
+        /* Navigation Bar Styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+        nav ul ul li {
+            float: none;
+            width: 200px;
+        }
+        nav ul ul li a {
+            padding: 10px;
+        }
+        nav ul ul li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="COE_WEBSITE.html">Home</a></li>
+
+                <!-- Instruction Dropdown -->
+                <li>
+                    <a href="#">Instruction</a>
+                    <ul>
+                        <li><a href="curricular-offerings.html">Curricular Offerings</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </li>
+
+                <!-- Research Dropdown -->
+                <li>
+                    <a href="#">Research</a>
+                    <ul>
+                        <li><a href="bsce-research.html">BSCE Research</a></li>
+                        <li><a href="bscpe-research.html">BSCPE Research</a></li>
+                        <li><a href="bsee-research.html">BSEE Research</a></li>
+                        <li><a href="bsme-research.html">BSME Research</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#extension">Extension</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>PRMSU College of Engineering</h1>
+            <p>Engineering the Future</p>
+            <button>Explore Our Programs</button>
+        </section>
+
+        <!-- Other sections like Extension, History, etc., remain here -->
+        
+        <section id="extension">
+            <h2>Engaging Our Community</h2>
+            <div class="extension-grid">
+                <div class="extension-card">
+                    <h3>Fish Crushing Machine Project</h3>
+                    <p>Community engagement project</p>
+                </div>
+                <div class="extension-card">
+                    <h3>Orientation and Gender Sensitivity Training</h3>
+                    <p>Training program for freshmen</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>A Legacy of Excellence</h2>
+            <div class="history-timeline">
+                <div class="history-event">
+                    <h3>Established in 1956</h3>
+                    <p>PRMSU College of Engineering was established</p>
+                </div>
+                <div class="history-event">
+                    <h3>First Graduating Class</h3>
+                    <p>First batch of graduates</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="search">
+            <h2>Search</h2>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button>Search</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PRMSU College of Engineering</p>
+    </footer>
+</body>
+</html>
