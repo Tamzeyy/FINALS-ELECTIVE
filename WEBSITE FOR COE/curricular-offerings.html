@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curricular Offerings - PRMSU College of Engineering</title>
+    <link rel="stylesheet" href="Css-file.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curricular Offerings</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+            
+            /* Navigation Bar */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                padding: 10px 20px;
+                color: white;
+            }
+            .navbar-left {
+                display: flex;
+                align-items: center;
+            }
+            .navbar-left img {
+                height: 50px;
+                margin-right: 15px;
+            }
+            .navbar-left h1 {
+                font-size: 18px;
+            }
+            .navbar-right {
+                display: flex;
+                align-items: center;
+            }
+            .navbar-right a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+                padding: 10px;
+            }
+            .navbar-right a:hover {
+                background-color: #575757;
+                border-radius: 5px;
+            }
+            .search-bar {
+                margin-left: 20px;
+                padding: 5px;
+                border: none;
+                border-radius: 3px;
+            }
+            /* Dropdown Styles */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropbtn {
+                background-color: #333;
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown:hover .dropbtn {
+                background-color: #575757;
+            }
+    
+            /* Breadcrumb */
+            .breadcrumb { padding: 15px; background-color: #f2f2f2; }
+            .breadcrumb a { color: #d35400; text-decoration: none; }
+            .breadcrumb a:hover { text-decoration: underline; }
+    
+            /* Section Title */
+            .section-title { 
+                background-color: #f96302; 
+                padding: 15px; 
+                text-align: center; 
+                color: white; 
+                font-size: 24px;
+                font-weight: bold;
+            }
+    
+            /* Curricular Offerings */
+            .curricular-offerings {
+                padding: 40px;
+                background-color: #f9f9f9;
+            }
+    
+            .curricular-grid {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 40px;
+            }
+    
+            .offering {
+                width: 20%;
+            }
+    
+            .offering h3 {
+                color: #d35400;
+                font-weight: bold;
+            }
+    
+            .offering ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+    
+            .offering ul li {
+                margin-bottom: 10px;
+            }
+    
+            .offering ul li ul {
+                margin-top: 10px;
+            }
+    
+            .offering ul li ul li {
+                margin-bottom: 5px;
+            }
+    
+            /* Footer */
+            .footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <!-- Left section: Logo and Title -->
+            <div class="navbar-left">
+                <img src="logo.png" alt="PRMSU Logo">
+                <h1>PRMSU College of Engineering</h1>
+            </div>
+    
+            <!-- Right section: Navigation Links and Search Bar -->
+            <div class="navbar-right">
+                <a href="HOME.html" id="home-link">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Instruction</button>
+                    <div class="dropdown-content">
+                        <a href="curricular-offerings.html">Curricular Offerings</a>
+                        <a href="faculty.html">Faculty</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Research</button>
+                    <div class="dropdown-content">
+                        <a href="bsce-research.html">BSCE Research</a>
+                        <a href="bscpe-research.html">BSCpE Research</a>
+                        <a href="bsee-research.html">BSEE Research</a>
+                        <a href="bsme-research.html">BSME Research</a>
+                    </div>
+                </div>
+                <a href="#">Extension</a>
+                <a href="#">History</a>
+                <input type="text" placeholder="Search..." class="search-bar">
+            </div>
+        </div> 
+    
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="instruction.html">Instruction</a> >> Curricular Offerings
+        </div>
+    
+        <!-- Section Title -->
+        <div class="section-title">
+            Curricular Offerings
+             <!-- Content -->
+    <div class="section">
+        <p>The College of Engineering offers a wide range of engineering programs designed to foster innovative and globally competitive professionals.</p>
+
+    </div>
+        </div>
+    
+        <!-- Curricular Offerings Content -->
+        <div class="curricular-offerings">
+            <div class="curricular-grid">
+    
+                <!-- Civil Engineering -->
+                <div class="offering">
+                    <h3>Civil Engineering</h3>
+                    <ul>
+                        <li><a href="#">CMO</a></li>
+                        <li>Curriculum
+                            <ul>
+                                <li><a href="#">2022</a></li>
+                                <li><a href="#">2019</a></li>
+                                <li><a href="#">2018 (STEM)</a></li>
+                                <li><a href="#">2018 (Non-STEM)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Computer Engineering -->
+                <div class="offering">
+                    <h3>Computer Engineering</h3>
+                    <ul>
+                        <li><a href="#">CMO</a></li>
+                        <li>Curriculum
+                            <ul>
+                                <li><a href="#">2022</a></li>
+                                <li><a href="#">2019</a></li>
+                                <li><a href="#">2018</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Electrical Engineering -->
+                <div class="offering">
+                    <h3>Electrical Engineering</h3>
+                    <ul>
+                        <li><a href="#">CMO</a></li>
+                        <li>Curriculum
+                            <ul>
+                                <li><a href="#">2022</a></li>
+                                <li><a href="#">2019</a></li>
+                                <li><a href="#">2018 (STEM)</a></li>
+                                <li><a href="#">2018 (Non-STEM)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Mechanical Engineering -->
+                <div class="offering">
+                    <h3>Mechanical Engineering</h3>
+                    <ul>
+                        <li><a href="#">CMO</a></li>
+                        <li>Curriculum
+                            <ul>
+                                <li><a href="#">2022</a></li>
+                                <li><a href="#">2019</a></li>
+                                <li><a href="#">2018 (STEM)</a></li>
+                                <li><a href="#">2018 (Non-STEM)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Mining Engineering -->
+                <div class="offering">
+                    <h3>Mining Engineering</h3>
+                    <ul>
+                        <li><a href="#">CMO</a></li>
+                        <li>Curriculum
+                            <ul>
+                                <li><a href="#">202x</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            <p>PRMSU College of Engineering © 2023</p>
+        </div>
+    
+    </body>
+    </html>
+
+    <script src="Java-Script.js"></script>
+</body>
+</html>
